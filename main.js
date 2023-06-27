@@ -11,3 +11,10 @@ Array.prototype.forEach.call(buttons, (el) =>
     alert(1);
   })
 );
+
+//과연 이것도 동작할까?
+Array.from(buttons).forEach((el) =>
+  el.addEventListener('click', () => {
+    alert('array from');
+  })
+);
