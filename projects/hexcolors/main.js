@@ -12,3 +12,11 @@ function getRandomHexText() {
       .padStart(6, 0);
   return randomHex;
 }
+
+function changeBgToRandomHexColor() {
+  const hex1 = getRandomHexText();
+  const hex2 = getRandomHexText();
+  background.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
+}
+
+generateBtn.addEventListener('click', changeBgToRandomHexColor);
