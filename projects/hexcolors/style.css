@@ -7,6 +7,7 @@
 }
 
 .btn-container {
+  text-align: center;
   :nth-child(1) {
     margin-right: 10px;
   }
@@ -15,4 +16,9 @@
 button {
   padding: 0.5rem;
   user-select: none;
+}
+
+span {
+  color: #ffff;
+  font-size: 2rem;
 }
