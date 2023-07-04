@@ -24,5 +24,21 @@ function getRandomHexText() {
   return randomHex;
 }
 
+function updateBgColor(colorFrom, colorTo) {
+  background.style.background = genLinearGradientValue(45, colorFrom, colorTo);
+}
+
+function updateHexText(colorFrom, colorTo) {
+  const text = `background: ${genLinearGradientValue(45, colorFrom, colorTo)}`;
+  hexText.textContent = text;
+}
+
+function changeBgToRandomHexColor() {
+  const hex1 = getRandomHexText();
+  const hex2 = getRandomHexText();
+  updateBgColor(hex1, hex2);
+  updateHexText(hex1, hex2);
+}
+
 init();
 generateBtn.addEventListener('click', changeBgToRandomHexColor);
