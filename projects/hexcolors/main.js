@@ -4,6 +4,17 @@ const btnContainer = document.querySelector('.btn-container');
 const generateBtn = document.querySelector('#generate-btn');
 const copyBtn = document.querySelector('#copy-btn');
 
+function genLinearGradientValue(degree, colorFrom, colorTo) {
+  return `linear-gradient(${degree}deg, ${colorFrom}, ${colorTo})`;
+}
+
+function init() {
+  const initialColor = '#000000';
+  const styleText = genLinearGradientValue(45, initialColor, initialColor);
+  background.style.background = styleText;
+  hexText.textContent = `background: ${styleText}`;
+}
+
 function getRandomHexText() {
   const randomHex =
     '#' +
@@ -13,10 +24,5 @@ function getRandomHexText() {
   return randomHex;
 }
 
-function changeBgToRandomHexColor() {
-  const hex1 = getRandomHexText();
-  const hex2 = getRandomHexText();
-  background.style.background = `linear-gradient(45deg, ${hex1}, ${hex2})`;
-}
-
+init();
 generateBtn.addEventListener('click', changeBgToRandomHexColor);
