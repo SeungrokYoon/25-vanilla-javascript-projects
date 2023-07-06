@@ -40,5 +40,18 @@ function changeBgToRandomHexColor() {
   updateHexText(hex1, hex2);
 }
 
+function copyToClipboard() {
+  const text = hexText.textContent;
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard
+      .writeText(text)
+      .then((r) => alert('Copied!'))
+      .catch((e) => alert('Try again'));
+  } else {
+    alert('the window is insecure');
+  }
+}
+
 init();
 generateBtn.addEventListener('click', changeBgToRandomHexColor);
+copyBtn.addEventListener('click', copyToClipboard);
