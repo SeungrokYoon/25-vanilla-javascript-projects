@@ -15,13 +15,22 @@ function init() {
   hexText.textContent = `background: ${styleText}`;
 }
 
-function getRandomHexText() {
-  const randomHex =
-    '#' +
-    parseInt(Math.random() * 2 ** 16)
+function getRandomHex(prevHex) {
+  let newHex = parseInt(Math.random() * 2 ** 16)
+    .toString(16)
+    .padStart(6, 0);
+  while (prevHex !== undefined && prevHex === newHex) {
+    newHex = parseInt(Math.random() * 2 ** 16)
       .toString(16)
       .padStart(6, 0);
-  return randomHex;
+  }
+  return '#' + newHex;
+}
+
+function getRandomHexPair() {
+  const randomHexFrom = getRandomHex();
+  const randomHexTo = getRandomHex(randomHexFrom);
+  return [randomHexFrom, randomHexTo];
 }
 
 function updateBgColor(colorFrom, colorTo) {
@@ -34,8 +43,7 @@ function updateHexText(colorFrom, colorTo) {
 }
 
 function changeBgToRandomHexColor() {
-  const hex1 = getRandomHexText();
-  const hex2 = getRandomHexText();
+  const [hex1, hex2] = getRandomHexPair();
   updateBgColor(hex1, hex2);
   updateHexText(hex1, hex2);
 }
