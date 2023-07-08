@@ -8,7 +8,7 @@ async function getQuotes(url = '') {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'X-Api-Key': config.api_ninjas_key,
+        'X-Api-Key': config.API_NINJAS_KEY,
       },
     });
     if (!response.ok) {
