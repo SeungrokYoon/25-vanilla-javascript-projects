@@ -1,0 +1,9 @@
+{
+  "name": "25-js-ideas",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/SeungrokYoon/25vannillaJSProjects.git",
+  "author": "Seungrok <sonicrok93@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
