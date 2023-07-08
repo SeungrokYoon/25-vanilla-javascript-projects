@@ -2,6 +2,8 @@ const quoteParagraph = document.querySelector('.quote');
 const authorSpan = document.querySelector('.author');
 const generateBtn = document.querySelector('.generate-btn');
 
+handleClick();
+
 async function getQuotes(url = '') {
   try {
     const response = await fetch(url, {
