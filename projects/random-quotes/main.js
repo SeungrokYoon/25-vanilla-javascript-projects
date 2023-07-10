@@ -9,23 +9,23 @@ async function getQuotes(url = '') {
   loading = true;
   quoteParagraph.innerHTML = `<span style="color: #06bdc1;">loading</span>`;
   authorSpan.innerText = '';
+
+  const apiURL = '/.netlify/functions/getQuote';
+
   try {
-    const response = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Api-Key': process.env.API_NINJAS_KEY,
-      },
-    });
+    const response = await fetch(apiURL);
+
     if (!response.ok) {
-      throw new Error('네트워크 오류');
+      throw new Error('네트워크 오류' + response.status);
     }
+    loading = false;
+    quoteParagraph.innerHTML = '';
     return response.json();
   } catch (error) {
     console.error(error);
+    loading = false;
+    quoteParagraph.innerHTML = '';
   }
-  loading = false;
-  quoteParagraph.innerHTML = '';
 }
 
 async function handleClick() {
