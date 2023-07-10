@@ -6,9 +6,16 @@
   "author": "Seungrok <sonicrok93@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "link": "yarn netlify link",
+    "unlink": "yarn netlify unlink",
+    "env-list": "yarn netlify env:list",
     "dev": "yarn netlify dev"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "netlify-cli": "^15.8.1"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.16"
   }
 }
