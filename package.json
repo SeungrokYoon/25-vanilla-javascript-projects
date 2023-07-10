@@ -5,5 +5,10 @@
   "repository": "https://github.com/SeungrokYoon/25vannillaJSProjects.git",
   "author": "Seungrok <sonicrok93@gmail.com>",
   "license": "MIT",
-  "dependencies": {}
+  "scripts": {
+    "dev": "yarn netlify dev"
+  },
+  "dependencies": {
+    "netlify-cli": "^15.8.1"
+  }
 }
