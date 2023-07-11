@@ -18,4 +18,3 @@ body:
       value: 'Show current user status!'
     validations:
       required: true
-  - type: textarea
