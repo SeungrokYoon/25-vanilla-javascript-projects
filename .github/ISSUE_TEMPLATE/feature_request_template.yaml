@@ -1,0 +1,21 @@
+name: Feature Request
+description: Request a new feature
+title: '[Feat]: '
+labels: ['enhancement']
+assignees:
+  - seungrokyoon
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: feature
+    attributes:
+      label: What feature do you want to request?
+      description: Also tell us, expected impact of this feature on our service!
+      placeholder: Tell us what you think!
+      value: 'Show current user status!'
+    validations:
+      required: true
+  - type: textarea
