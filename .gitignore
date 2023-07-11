@@ -1,5 +1,5 @@
 apiKey.js
 node_modules/
-.envs
+.env
 # Local Netlify folder
 .netlify
