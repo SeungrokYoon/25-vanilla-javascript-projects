@@ -9,7 +9,8 @@
     "link": "yarn netlify link",
     "unlink": "yarn netlify unlink",
     "env-list": "yarn netlify env:list",
-    "dev": "yarn netlify dev"
+    "dev": "yarn netlify dev",
+    "prune_local_branch": "git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
