@@ -4,6 +4,11 @@ This project is motivated by [25 Beginner JavaScript Project Ideas](https://medi
 
 It consists of 25 mini projects with diverse feature requirements.
 
+## Try my project!
+You can try my project [here](https://animated-pony-97da24.netlify.app) 😉!
+
+My project was deployed by `Netlify`.
+
 ## Please be noted...
 This project is currently in progress and would be ceaselessly updated to the end.
 
