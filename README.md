@@ -1,4 +1,15 @@
-# 25vannillaJSProjects
+# 25 Vanilla JS Projects
 
-[25 Beginner JavaScript Project Ideas](https://dev.to/codefoxx/25-beginner-javascript-project-ideas-3m9h)
-에서 동기를 얻어 바닐라 JS에 대한 이해를 높히기 위해 시작한 프로젝트입니다.
+This project is motivated by [25 Beginner JavaScript Project Ideas](https://medium.com/@miguelznunez/25-beginner-javascript-project-ideas-993d58edfe04) for improve my basic understanding on Javascript, HTML, and CSS.
+
+It consists of 25 mini projects with diverse feature requirements.
+
+## Please be noted...
+This project is currently in progress and would be ceaselessly updated to the end.
+
+## Blog Posts on this project
+I am writing a series of blog posts on this project.
+
+If you are interested in my work history, including problems I came accross and how I overcame them, 
+
+it would be highly apprecieated if you could visit [my blog](https://velog.io/@seungrok-yoon/Blog-25JS-Ideas-1-of-27)👍!
