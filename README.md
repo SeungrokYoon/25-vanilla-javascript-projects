@@ -1,6 +1,6 @@
 # 25 Vanilla JS Projects
 
-This project is motivated by [25 Beginner JavaScript Project Ideas](https://medium.com/@miguelznunez/25-beginner-javascript-project-ideas-993d58edfe04) for improve my basic understanding on Javascript, HTML, and CSS.
+This project is motivated by [25 Beginner JavaScript Project Ideas](https://medium.com/@miguelznunez/25-beginner-javascript-project-ideas-993d58edfe04) for in-depth understaning of major concepts and practical usage of Javascript, HTML, and CSS.
 
 It consists of 25 mini projects with diverse feature requirements.
 
