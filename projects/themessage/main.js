@@ -6,8 +6,11 @@ function submitMessage({ start, destination }) {
   const nextText = start.value;
   start.value = '';
   const currentDestinationText = destination.innerHTML;
-  const shouldUpdate = currentDestinationText !== nextText;
+  const isNewTextNotEmpty = nextText.length;
+  const shouldUpdate = isNewTextNotEmpty && currentDestinationText !== nextText;
   shouldUpdate ? (destination.innerHTML = nextText) : '';
+
+  if (!isNewTextNotEmpty) alert('The message is empty!');
 }
 
 submitBtn.addEventListener('click', (e) => {
