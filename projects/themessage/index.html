@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pass the message</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="card">
+          <div class="card-top">
+            <h3>Pass the message</h3>
+          </div>
+          <hr />
+          <div class="card-middle">
+            <label for="message-input">Enter a message</label>
+            <div id="input-with-icon">
+              <button class="icon-button">
+                <span class="material-icons-outlined"> email </span>
+              </button>
+              <input
+                id="message-input"
+                type="text"
+                placeholder="Enter your message"
+                maxlength="20"
+              />
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+          <div class="card-bottom">
+            <p id="output-message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

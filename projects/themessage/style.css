@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#b8dafc, white);
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  margin: auto;
+  padding: 0 20px;
+  border: 1px solid lightgray;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+.card-top {
+  text-align: center;
+}
+
+.card-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & > label {
+    width: fit-content;
+    cursor: pointer;
+  }
+}
+
+div#input-with-icon {
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #d3d3d380;
+  }
+}
+
+button.icon-button {
+  flex: 0;
+  margin: 0;
+  padding: 2px;
+  border-radius: 5px 0 0 5px;
+  > span {
+    vertical-align: middle;
+  }
+}
+
+button#submit {
+  width: fit-content;
+  padding: 10px;
+}
+
+input {
+  flex: 1;
+  width: fit-content;
+  margin: 0;
+  padding: auto;
+  text-align: center;
+  outline: none;
+  border: 1px solid lightgray;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 70%;
+  }
+}
