@@ -3,9 +3,11 @@ const submitBtn = document.getElementById('submit');
 const outputMessageEl = document.getElementById('output-message');
 
 function submitMessage({ start, destination }) {
-  const inputText = start.value;
+  const nextText = start.value;
   start.value = '';
-  destination.innerHTML = inputText;
+  const currentDestinationText = destination.innerHTML;
+  const shouldUpdate = currentDestinationText !== nextText;
+  shouldUpdate ? (destination.innerHTML = nextText) : '';
 }
 
 submitBtn.addEventListener('click', (e) => {
