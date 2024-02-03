@@ -17,6 +17,7 @@
     "netlify-cli": "^15.8.1"
   },
   "devDependencies": {
-    "netlify-lambda": "^2.0.16"
+    "netlify-lambda": "^2.0.16",
+    "prettier": "^3.2.4"
   }
 }

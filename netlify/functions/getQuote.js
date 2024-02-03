@@ -1,12 +1,12 @@
-require('dotenv').config();
+require("dotenv").config();
 
 exports.handler = async (event, context) => {
-  const url = 'https://api.api-ninjas.com/v1/quotes?category=love';
+  const url = "https://api.api-ninjas.com/v1/quotes?category=love";
   try {
     const response = await fetch(url, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'X-Api-Key': process.env.API_NINJAS_KEY,
+        "X-Api-Key": process.env.API_NINJAS_KEY,
       },
     });
     const resData = await response.json();

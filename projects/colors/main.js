@@ -1,6 +1,6 @@
-import { colorTable } from './colorTable.js';
+import { colorTable } from "./colorTable.js";
 
-const button = document.querySelector('button');
+const button = document.querySelector("button");
 
 let index = 0;
 
@@ -10,4 +10,4 @@ function getNextColor(e) {
   index %= keys.length;
 }
 
-button.addEventListener('click', getNextColor);
+button.addEventListener("click", getNextColor);
